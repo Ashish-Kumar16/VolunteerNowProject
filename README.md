@@ -5,7 +5,7 @@ VolunteerNow is a platform that connects volunteers with organizations offering 
 ## Project Structure
 
 ```
-volunteernow/
+volunteerNowProject/
 ├── volunteernow/
 │   ├── __init__.py
 │   ├── settings.py
@@ -62,14 +62,13 @@ volunteernow/
 ### Prerequisites
 
 - Python 3.8+
-- pip (Python package installer)
 
 ### Installation
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/volunteernow.git
+   git clone https://github.com/Ashish-Kumar16/VolunteerNowProject.git
    cd volunteernow
    ```
 
@@ -83,7 +82,7 @@ volunteernow/
 3. **Install dependencies:**
 
    ```bash
-   pip install -r requirements.txt
+   pip install django djangorestframework django-filter drf-yasg djangorestframework-simplejwt
    ```
 
 4. **Set up the database:**
@@ -130,12 +129,4 @@ volunteernow/
 - **List/Create Volunteer Opportunities:** `GET/POST /api/opportunities/`
 - **Apply for Opportunity:** `POST /api/applications/`
 - **Make a Donation:** `POST /api/donations/`
-
-## Running Tests
-
-To run the tests, use the following command:
-
-```bash
-python manage.py test
-```
 
