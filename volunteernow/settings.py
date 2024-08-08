@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'opportunities',
     'django_filters',
     'drf_yasg',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -32,9 +33,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'volunteernow.urls'
+
+
 
 TEMPLATES = [
     {
@@ -51,6 +56,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 
 
@@ -134,4 +141,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'connect.ashishkr@gmail.com'
-EMAIL_HOST_PASSWORD = 'wyxf qyjv khpy wgkb'  # Use App Passwords if you have 2FA enabled
+EMAIL_HOST_PASSWORD = 'wyxf qyjv khpy wgkb'  
+
